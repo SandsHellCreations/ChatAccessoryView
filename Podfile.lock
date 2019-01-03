@@ -1,0 +1,12 @@
+PODS:
+  - GrowingTextView (0.5.4)
+
+DEPENDENCIES:
+  - GrowingTextView
+
+SPEC CHECKSUMS:
+  GrowingTextView: 0615429affef558cbbb610aa6f9baf19b027fdbe
+
+PODFILE CHECKSUM: 8f6b0e4e9f12245d90fce3b01da166da81367285
+
+COCOAPODS: 1.4.0.beta.2

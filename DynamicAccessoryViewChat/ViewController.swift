@@ -10,16 +10,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  @IBOutlet weak var tableViewOutlet: ChatTable! {
+    didSet {
+      tableViewOutlet.delegate = self
+      tableViewOutlet.dataSource = self
+    }
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    tableViewOutlet.becomeFirstResponder()
   }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
+}
+//MARK:- TableView Delegate and datasource
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return 30
   }
-
-
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    guard let cell  = tableViewOutlet.dequeueReusableCell(withIdentifier: "ChatCell", for: indexPath) as? ChatCell else {
+      return UITableViewCell()
+    }
+    return cell
+  }
 }
 
