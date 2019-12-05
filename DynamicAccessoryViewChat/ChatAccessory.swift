@@ -36,7 +36,7 @@ class ChatAccessory: UIView {
     }
   }
   
-  @IBAction func btnSendActino(_ sender: Any) {
+  @IBAction func btnSendAction(_ sender: Any) {
     
   }
 }
