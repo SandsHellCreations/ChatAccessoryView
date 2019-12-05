@@ -44,7 +44,7 @@
                     </constraints>
                     <state key="normal" title="Send"/>
                     <connections>
-                        <action selector="btnSendActino:" destination="-1" eventType="touchUpInside" id="3rx-Zc-vmy"/>
+                        <action selector="btnSendAction:" destination="-1" eventType="touchUpInside" id="3rx-Zc-vmy"/>
                     </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0K3-B0-dLm">
